@@ -1,0 +1,6 @@
+O self:: faz referência ao próprio objeto ou classe.
+O static:: faz referência ao  objeto ou classe que está sendo executado.
+* comando para depois de alterar o composer:
+ - composer dumpautoload
+ * comando para iniciar o servidor na pasta pública:    
+ - php -S localhost:8000 -t public

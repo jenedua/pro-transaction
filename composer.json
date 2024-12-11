@@ -1,0 +1,15 @@
+{
+    "name": "fedne/pro-transaction",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fedner",
+            "email": "91825533+jenedua@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
