@@ -1,11 +1,17 @@
 <?php
+    session_start();
     require_once '../vendor/autoload.php';
 
-use app\database\models\User;
-use app\database\Transaction;
+    use app\core\library\Session;
+    use app\database\models\User;
+    use app\database\Transaction;
    
 
     try {
+        Session::set('name', 'Fedner');
+        Session::flash('message', 'Welcome to my website');
+       // Session::destroy('name');
+        Session::dump();
 
         Transaction::open();
         $user = new User();

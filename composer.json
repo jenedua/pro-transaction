@@ -11,5 +11,7 @@
             "email": "91825533+jenedua@users.noreply.github.com"
         }
     ],
-    "require": {}
+    "require": {
+        "intervention/image": "2"
+    }
 }

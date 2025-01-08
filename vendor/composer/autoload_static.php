@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit5396083d7660bb2aa934c6cdee6e5704
 {
+    public static $files = array (
+        '3b5531f8bb4716e1b6014ad7e734f545' => __DIR__ . '/..' . '/illuminate/support/Illuminate/Support/helpers.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'a' => 
         array (
@@ -20,6 +24,35 @@ class ComposerStaticInit5396083d7660bb2aa934c6cdee6e5704
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Symfony\\Component\\Finder\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/symfony/finder',
+            ),
+        ),
+        'I' => 
+        array (
+            'Intervention\\Image\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/intervention/image/src',
+            ),
+            'Illuminate\\Support' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/support',
+            ),
+            'Illuminate\\Filesystem' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/filesystem',
+            ),
+            'Illuminate\\Config' => 
+            array (
+                0 => __DIR__ . '/..' . '/illuminate/config',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -29,6 +62,7 @@ class ComposerStaticInit5396083d7660bb2aa934c6cdee6e5704
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit5396083d7660bb2aa934c6cdee6e5704::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit5396083d7660bb2aa934c6cdee6e5704::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit5396083d7660bb2aa934c6cdee6e5704::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit5396083d7660bb2aa934c6cdee6e5704::$classMap;
 
         }, null, ClassLoader::class);
